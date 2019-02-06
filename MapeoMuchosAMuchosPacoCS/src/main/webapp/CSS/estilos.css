@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+body{
+    font-family: 'Amatic SC', cursive;
+    background-image: url("../IMG/fondo.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100%;
+    background-color: #43aef6;
+    text-align: center;
+    
+}
+
+#principal{
+    background: #ffffff99;
+    border-radius: 20px;
+    padding-bottom: 1%;
+    width: 50%;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+li{
+    list-style:none;
+    text-decoration: none;
+}
+
+a:link { 
+    text-decoration:none; 
+}
+
+h2{
+    margin-top: 1%;
+    font-size: 80px;
+    text-shadow: 3px 3px 2px #FFF;
+}
+
+a{
+    text-shadow: 3px 3px 2px #FFF;
+    transition: font-size .5s;
+    color: black;
+    font-size: 40px;
+}
+
+a:hover{
+    transition: font-size .5s;
+    font-size: 65px;
+}
+
+
+.contenedor {
+    margin: auto;
+    display: table;
+}
+
+/*p > a{
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+}
+
+pre{
+    font-size: 17px;
+    background: white;
+    opacity: 0.8;
+    border-radius: 20px;
+}*/
+
+td{
+    font-size: 40px;
+}
+input{
+    font-size: 40px;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    opacity: 0.8;
+}
+
+.interior{ display:none; } /* oculta las listas anidadas */
+
+
+hr{ 
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset; 
+}
+
+.boton{
+    background-color: #43aef6cf;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 20px;
+    transition: font-size .5s;
+    opacity: 1 !important;
+}
+.boton:hover{
+    transition: font-size .5s;
+    font-size: 50px;
+}
+
+button, input,select{
+    outline: 0;
+}
+
+#listadoLibros, #listadoAutores{
+    font-size: 30px;
+}

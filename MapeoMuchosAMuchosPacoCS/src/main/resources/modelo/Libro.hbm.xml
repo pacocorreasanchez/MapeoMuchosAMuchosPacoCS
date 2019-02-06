@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="es.albarregas.beans.Libro">
+        <id name="idLibro">
+            <column name="idLibro"/>
+            <generator class="identity"/>
+        </id>
+        
+        <property name="titulo" type="string" length="20" not-null="true"/>
+        
+        <set name="autores" table="escrito_por" cascade="save-update" inverse="false" lazy="false">
+            <key>
+                <column name="idLibro"/> <!--este idLibro es el de la tabla escrito_por (FK)--> 
+            </key>
+            <many-to-many column="idAutor" class="es.albarregas.beans.Autor"/>
+        </set>
+    </class>
+</hibernate-mapping>
